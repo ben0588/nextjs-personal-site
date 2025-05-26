@@ -5,6 +5,7 @@ import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { getMessages, setRequestLocale } from 'next-intl/server';
+import LanguageSwitcher from '@/components/i18n/LanguageSwitcher';
 
 const geistSans = Geist({
 	variable: '--font-geist-sans',
@@ -36,12 +37,17 @@ export default async function LocaleLayout({ children, params }) {
 	setRequestLocale(locale);
 
 	return (
-		<html lang={locale}>
-			<body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-				<NextIntlClientProvider locale={locale} messages={messages}>
-					{children}
-				</NextIntlClientProvider>
-			</body>
-		</html>
+		<NextIntlClientProvider locale={locale} messages={messages}>
+			<html lang={locale} className='min-w-[328px]'>
+				<body className={`${geistSans.variable} ${geistMono.variable} mx-auto antialiased`}>
+					<div className='flex min-h-screen max-w-full flex-col'>
+						<header className='flex items-center justify-center p-3'>
+							<LanguageSwitcher />
+						</header>
+						<main className='grow'>{children}</main>
+					</div>
+				</body>
+			</html>
+		</NextIntlClientProvider>
 	);
 }
