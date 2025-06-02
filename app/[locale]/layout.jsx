@@ -5,7 +5,10 @@ import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
+
 import LanguageSwitcher from '@/components/i18n/LanguageSwitcher';
+import ThemeProviders from '@/components/common/ThemeProviders';
+import ThemeToggle from '@/components/common/ThemeToggle';
 
 const geistSans = Geist({
 	variable: '--font-geist-sans',
@@ -64,14 +67,18 @@ export default async function LocaleLayout({ children, params }) {
 
 	return (
 		<NextIntlClientProvider locale={locale} messages={messages}>
-			<html lang={locale} className='min-w-[328px]'>
+			<html lang={locale} className='min-w-[328px]' suppressHydrationWarning>
 				<body className={`${geistSans.variable} ${geistMono.variable} mx-auto antialiased`}>
-					<div className='flex min-h-screen max-w-full flex-col'>
-						<header className='flex items-center justify-center p-3'>
-							<LanguageSwitcher />
-						</header>
-						<main className='grow'>{children}</main>
-					</div>
+					<ThemeProviders>
+						<div className='flex min-h-screen max-w-full flex-col'>
+							<header className='flex items-center justify-center p-3'>
+								<LanguageSwitcher />
+								<ThemeToggle />
+							</header>
+
+							<main className='grow'>{children}</main>
+						</div>
+					</ThemeProviders>
 				</body>
 			</html>
 		</NextIntlClientProvider>
