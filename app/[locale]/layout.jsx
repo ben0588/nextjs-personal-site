@@ -1,24 +1,26 @@
 'use server';
 // /app/[locale]/layout.jsx
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Noto_Sans_TC, Alegreya } from 'next/font/google';
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 
-import LanguageSwitcher from '@/components/i18n/LanguageSwitcher';
 import ThemeProviders from '@/components/common/ThemeProviders';
-import ThemeToggle from '@/components/common/ThemeToggle';
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
 
-const geistSans = Geist({
-	variable: '--font-geist-sans',
-	subsets: ['latin'],
+// See: https://github.com/kwonoj/swc-plugin-coverage-instrument/issues/199#issuecomment-1463562229
+/* istanbul ignore next */
+const NotoSansTC = Noto_Sans_TC({
+	subsets: ['latin'], // "chinese-traditional" 不可用
+	display: 'optional',
 });
-
-const geistMono = Geist_Mono({
-	variable: '--font-geist-mono',
-	subsets: ['latin'],
+const AlegreyaFont = Alegreya({
+	subsets: ['latin'], // 英文語系字型
+	display: 'optional',
 });
+// latin：拉丁字母，適用於英文和大多數歐洲語言
 
 // export async function generateMetadata({ params }) {
 // 	return {
@@ -67,16 +69,13 @@ export default async function LocaleLayout({ children, params }) {
 
 	return (
 		<NextIntlClientProvider locale={locale} messages={messages}>
-			<html lang={locale} className='min-w-[328px]' suppressHydrationWarning>
-				<body className={`${geistSans.variable} ${geistMono.variable} mx-auto antialiased`}>
+			<html lang={locale} className='min-w-[320px]' suppressHydrationWarning>
+				<body className={`${NotoSansTC.className} antialiased`}>
 					<ThemeProviders>
 						<div className='flex min-h-screen max-w-full flex-col'>
-							<header className='flex items-center justify-center p-3'>
-								<LanguageSwitcher />
-								<ThemeToggle />
-							</header>
-
-							<main className='grow'>{children}</main>
+							<Header />
+							<main className='grow pt-3'>{children}</main>
+							<Footer />
 						</div>
 					</ThemeProviders>
 				</body>

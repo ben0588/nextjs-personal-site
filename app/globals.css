@@ -1,3 +1,105 @@
 @import 'tailwindcss';
 
+@theme {
+	/* 顏色設定 */
+	--color-primary: #b713ff;
+	--color-primary-dark: #ffffff;
+	--color-primary-text: #000000;
+	--color-dark: #000000;
+	--color-secondary-dark: #364153;
+	/* --color-secondary: #223c3b;
+	--color-secondary-dark: #101c1c;
+	--color-danger: #ff4d4f;
+	--color-background: #10151a;
+	--color-foreground: #ededed;
+	--color-primary-gradient: linear-gradient(90deg, #2fff7f 0%, #0be881 100%); */
+
+	/* 斷點設定 */
+	--breakpoint-xs: 29rem; /* 斷點 464 以上 */
+
+	/* 動畫相關設定 */
+	--animate-wiggle: wiggle 1s ease-in-out infinite;
+	@keyframes wiggle {
+		0%,
+		100% {
+			transform: rotate(-3deg);
+		}
+		50% {
+			transform: rotate(3deg);
+		}
+	}
+
+	/* 選單從右邊展示至左邊 */
+	--animate-slideInFromRight: slideInFromRight 0.3s ease-out forwards;
+	@keyframes slideInFromRight {
+		0% {
+			transform: translateX(100%); /* 從螢幕右邊以外開始 */
+		}
+		100% {
+			transform: translateX(0); /* 回到原位 */
+		}
+	}
+
+	/* 選單從左邊收合回右邊 */
+	--animate-slideOutToRight: slideOutToRight 0.3s ease-in forwards;
+	@keyframes slideOutToRight {
+		0% {
+			transform: translateX(0);
+		}
+		99% {
+			transform: translateX(100%);
+		}
+		100% {
+			display: none;
+		}
+	}
+}
+
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+[data-theme='dark'],
+[data-theme='dark'] body {
+	color: #fff;
+	background: #000;
+}
+
+.navLink {
+	@apply text-primary-text dark:text-primary-dark hover:opacity-80;
+}
+
+.navLinkActive {
+	@apply text-primary font-bold before:absolute before:top-1 before:-left-3 before:font-bold before:content-['．'];
+}
+
+.navIcon {
+	@apply size-6;
+}
+
+.navButton {
+	@apply dark:bg-dark relative h-[40px] w-[40px] cursor-pointer rounded-full bg-gray-50 p-2 hover:bg-gray-100 dark:hover:bg-gray-900;
+}
+
+.navButton .navIcon {
+	position: absolute;
+	inset: 0;
+	margin: auto;
+	transition:
+		opacity 0.2s ease,
+		transform 0.2s ease;
+}
+.navButton .navIcon-open {
+	opacity: 1;
+	transform: scale(1) rotate(0deg);
+}
+.navButton .navIcon-close {
+	opacity: 0;
+	transform: scale(0.75) rotate(-90deg);
+}
+
+.navButton[data-open='true'] .navIcon-open {
+	opacity: 0;
+	transform: scale(0.75) rotate(90deg);
+}
+.navButton[data-open='true'] .navIcon-close {
+	opacity: 1;
+	transform: scale(1) rotate(0deg);
+}

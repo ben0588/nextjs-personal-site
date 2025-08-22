@@ -2,6 +2,9 @@
 
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
+import { FaMoon } from 'react-icons/fa6';
+import { AiOutlineLoading } from 'react-icons/ai';
+import { MdWbSunny } from 'react-icons/md';
 
 export default function ThemeToggle() {
 	const { theme, setTheme } = useTheme();
@@ -11,14 +14,20 @@ export default function ThemeToggle() {
 		setMounted(true);
 	}, []);
 
-	if (!mounted) return null;
+	if (!mounted)
+		return (
+			<button className='navButton animate-pulse' type='button'>
+				<AiOutlineLoading className='navIcon animate-spin' />
+			</button>
+		);
 
 	return (
 		<button
+			className='navButton'
+			type='button'
 			onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-			className='rounded bg-gray-200 px-4 py-2 text-black dark:bg-gray-800 dark:text-white'
 		>
-			切換主題
+			{theme === 'dark' ? <MdWbSunny className='navIcon' /> : <FaMoon className='navIcon' />}
 		</button>
 	);
 }

@@ -5,7 +5,10 @@ import { usePathname, useRouter } from '@/i18n/navigation';
 import { useEffect, useRef, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { AiOutlineGlobal } from 'react-icons/ai'; // 地球儀圖示
+import { IoEarth } from 'react-icons/io5';
+
 import PropTypes from 'prop-types';
+import { FaEarthAsia } from 'react-icons/fa6';
 
 function LanguageSwitcher({ isMobile = false }) {
 	const router = useRouter();
@@ -66,12 +69,12 @@ function LanguageSwitcher({ isMobile = false }) {
 	//  mobile language switcher
 	if (isMobile) {
 		return (
-			<div className='text-primaryText mt-3 ml-6 grid grid-cols-2 gap-2'>
+			<div className='mt-3 ml-6 grid grid-cols-2 gap-2'>
 				{availableLocales.map((language) => (
 					<button
 						type='button'
 						key={language.code}
-						className={`tag text-sm transition-all hover:opacity-70 ${currentLocale === language.code ? 'bg-primary text-primaryBtnText' : 'bg-primaryBg/50 text-primaryText'}`}
+						className={`tag text-sm transition-all hover:opacity-70 ${currentLocale === language.code ? 'bg-primary text-primaryBtnText' : 'bg-primaryBg/50'}`}
 						onClick={() => changeLocale(language.code)}
 					>
 						<span>{language.label}</span>
@@ -86,13 +89,14 @@ function LanguageSwitcher({ isMobile = false }) {
 			<button
 				type='button'
 				onClick={toggleMenuShow}
-				className='text-primaryText hover:text-primary flex items-center rounded-md focus:outline-none'
+				className='navButton'
 				aria-haspopup='true' // 閱讀器支援告知會有彈出的選單
 				aria-expanded={isOpenMenu} // 是否已開啟選單
 				aria-label={t('changeLanguage')}
 			>
-				<AiOutlineGlobal className='sm-icon' />
-				{/* <MdTranslate className="sm-icon" /> */}
+				<AiOutlineGlobal className='navIcon' />
+				{/* <IoEarth className='navIcon' />
+				<FaEarthAsia className='navIcon' /> */}
 			</button>
 
 			{isOpenMenu && (
@@ -105,7 +109,7 @@ function LanguageSwitcher({ isMobile = false }) {
 							<button
 								type='button'
 								onClick={() => changeLocale(language.code)}
-								className={`hover:text-primaryText flex size-full items-center justify-center gap-2 px-2 py-3 text-sm tracking-wide hover:bg-zinc-900/50 ${currentLocale === language.code ? 'bg-primary text-gray-700' : 'text-primaryText'}`}
+								className={`flex size-full items-center justify-center gap-2 px-2 py-3 text-sm tracking-wide ${currentLocale === language.code ? 'bg-primary text-gray-700' : 'cursor-pointer text-white'} hover:opacity-80`}
 								aria-label={`${t('changeLanguage')} ${language.label}`}
 							>
 								{language.label}
