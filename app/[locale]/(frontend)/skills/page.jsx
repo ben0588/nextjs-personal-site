@@ -41,7 +41,7 @@ const SkillsPage = async () => {
 			</div>
 
 			{/* LOGO LOOP 展示 */}
-			<div className='relative mt-10 h-[60px] overflow-hidden'>
+			<div className='relative my-10 h-[60px] overflow-hidden'>
 				<LogoLoop
 					logos={techLogos}
 					speed={40}
