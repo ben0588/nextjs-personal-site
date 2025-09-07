@@ -1,0 +1,5 @@
+{
+	"nextjs": { "label": "Next.js", "icon": "/icons/nextjs.svg" },
+	"react": { "label": "React", "icon": "/icons/react.svg" },
+	"tailwind": { "label": "Tailwind CSS", "icon": "/icons/tailwind.svg" }
+}

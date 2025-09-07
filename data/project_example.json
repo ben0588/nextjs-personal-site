@@ -1,0 +1,90 @@
+[
+	{
+		"id": "p_2024_beauty_wiki",
+		"slug": "beauty-wiki",
+		"title": "美容百科",
+		"shortDescription": "美容知識內容站，含會員系統、搜尋與多語系。",
+		"type": "website / admin / widget",
+		"year": 2024,
+		"status": "launched",
+		"featured": true,
+		"cover": {
+			"src": "/images/portfolio/beauty-wiki/cover.webp",
+			"width": 1600,
+			"height": 900,
+			"alt": "美容百科首頁截圖"
+		},
+		"tags": ["Next.js", "React", "TailwindCSS", "Supabase", "GA4"],
+		"tech": [
+			{ "key": "nextjs", "label": "Next.js", "url": "https://nextjs.org" },
+			{ "key": "react", "label": "React" },
+			{ "key": "tailwind", "label": "Tailwind CSS" }
+		],
+		"roles": ["Frontend"],
+		"responsibilities": [
+			"前台功能開發（文章列表/詳情/搜尋）",
+			"會員登入、註冊、權限與多語系整合",
+			"SEO 與效能優化（SSG/ISR、圖片尺寸規劃）"
+		],
+		"contributions": [
+			{ "label": "前端程式碼佔比", "value": "100%" },
+			{ "label": "設計合作", "value": "與設計師協作" }
+		],
+		"outcomes": [
+			{ "metric": "LCP", "value": "1.9s", "note": "首頁行動版" },
+			{ "metric": "SEO 點擊率", "value": "+22%", "note": "三個月內" }
+		],
+		"links": {
+			"demo": "https://beauty.example.com",
+			"repo": "https://github.com/you/beauty-wiki",
+			"caseStudy": "/portfolio/beauty-wiki"
+		},
+		"gallery": [
+			{
+				"src": "/images/portfolio/beauty-wiki/search.webp",
+				"width": 1600,
+				"height": 900,
+				"alt": "站內搜尋頁面",
+				"caption": "支援關鍵字與建議詞"
+			},
+			{
+				"src": "/images/portfolio/beauty-wiki/member.webp",
+				"width": 1600,
+				"height": 900,
+				"alt": "會員資料頁",
+				"caption": "JWT 驗證與權限控制"
+			}
+		],
+		"timeline": {
+			"start": "2024-03",
+			"end": "2024-08",
+			"milestones": [
+				{ "date": "2024-04", "title": "MVP 完成" },
+				{ "date": "2024-06", "title": "上線測試站" },
+				{ "date": "2024-08", "title": "正式版上線" }
+			]
+		},
+		"caseIntro": {
+			"context": "專案脈絡_內容型網站，追求良好索引與讀取速度。",
+			"mission": "建置多人維護且易擴充的前台與會員模組。",
+			"myRole": "主導前端、協作 API 介接與 SEO。",
+			"impact": "縮短頁面載入時間並提升自然流量。"
+		},
+		"reflection": [
+			"學到的東西",
+			"以 ISR 取代全量重建，加速內容發布。",
+			"集中式圖片尺寸管理，解決 CLS 與效能問題。"
+		],
+		"relations": {
+			"skills": ["seo", "a11y", "perf"],
+			"relatedProjects": ["p_2023_admin_dashboard"]
+		},
+		"visibility": {
+			"private": false,
+			"withNda": false
+		},
+		"sort": 10,
+		"createdAt": "2024-03-10",
+		"updatedAt": "2024-08-22"
+	}
+]

@@ -1,0 +1,5 @@
+{
+	"pagination": { "perPage": 6, "infinite": false },
+	"contactCta": { "text": "聯絡我", "href": "/contact" },
+	"enableLightbox": true
+}

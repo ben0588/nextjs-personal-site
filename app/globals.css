@@ -1,19 +1,25 @@
 @import 'tailwindcss';
 
 @theme {
-	/* 顏色設定 */
+	/* 
+		顏色設定
+		- border 基本都是 bg-neutral-700 色系
+	*/
 	--color-primary: #b713ff;
-	--color-primary-dark: #ffffff;
 	--color-primary-text: #000000;
+	--color-primary-bg: '#ffffff'; /*無效果*/
 	--color-dark: #000000;
-	--color-secondary-dark: #364153;
-	/* --color-secondary: #223c3b;
-	--color-secondary-dark: #101c1c;
-	--color-danger: #ff4d4f;
-	--color-background: #10151a;
-	--color-foreground: #ededed;
-	--color-primary-gradient: linear-gradient(90deg, #2fff7f 0%, #0be881 100%); */
-
+	--color-dark-text: '#ffffff';
+	--color-primary-border: #d4d4d4;
+	--color-primary-border-hover: #a1a1a1;
+	--color-dark-primary-border: #404040;
+	--color-dark-primary-border-hover: #525252;
+	--color-primary-focus-border: '#737373';
+	--color-dark-primary-focus-border: '#f5f5f5';
+	--color-secondary: '#f5f5f5';
+	--color-secondary-text: '#525252';
+	--color-dark-secondary: #262626;
+	--color-dark-secondary-text: #d4d4d4;
 	/* 斷點設定 */
 	--breakpoint-xs: 29rem; /* 斷點 464 以上 */
 
@@ -62,8 +68,14 @@
 	background: #000;
 }
 
+/* 主容器 */
+.max-container {
+	@apply mx-auto max-w-6xl;
+}
+
+/* 導覽列 start */
 .navLink {
-	@apply text-primary-text dark:text-primary-dark hover:opacity-80;
+	@apply text-primary-text dark:text-dark-text hover:opacity-80;
 }
 
 .navLinkActive {
@@ -103,3 +115,58 @@
 	opacity: 1;
 	transform: scale(1) rotate(0deg);
 }
+/* 導覽列 ends */
+
+/* 下拉式選單 start */
+/* hover 無法設置 */
+option {
+	@apply dark:bg-dark bg-white text-sm text-neutral-700 dark:text-white;
+}
+
+/* option:disabled {
+	@apply text-primary-text bg-amber-300;
+} */
+
+option:checked {
+	@apply bg-neutral-100 font-semibold dark:bg-neutral-700;
+}
+/* 下拉式選單 ends */
+
+/* 連結 start */
+.link {
+	@apply text-primary-text dark:text-dark-text underline underline-offset-4 duration-75 hover:opacity-80;
+}
+/* 連結 ends */
+
+/* 標題 start*/
+.page-title {
+	@apply text-primary text-2xl;
+}
+
+h2,
+h3,
+h4,
+h5 {
+	@apply text-xl;
+}
+/* 標題 ends*/
+
+/* 按鈕 start */
+.button {
+	@apply border-primary-border hover:border-primary-border-hover focus:border-primary-focus-border dark:bg-dark dark:border-dark-primary-border dark:hover:border-dark-primary-border-hover dark:focus:border-dark-primary-focus-border text-primary-text dark:text-dark-text cursor-pointer rounded-sm border bg-white duration-100 hover:opacity-85;
+}
+/* 按鈕 ends */
+
+/* BreadcrumbNav --- start  */
+/* 通用分隔符號樣式 */
+.breadcrumbBeforeIcon {
+	@apply ps-3 before:absolute before:top-0.5 before:left-0 before:w-1 before:translate-x-0 before:-translate-y-0.5 before:font-medium before:content-['/'];
+}
+/* BreadcrumbNav --- ends */
+
+/* 常用框線 border --- start */
+.primary-border {
+	@apply border-primary-border hover:border-primary-border-hover dark:border-dark-primary-border dark:hover:border-dark-primary-border-hover border;
+}
+
+/* 常用框線 border --- ends */

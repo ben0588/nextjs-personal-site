@@ -1,0 +1,778 @@
+[
+	{
+		"id": "website_mu_ri_homeware",
+		"title": "沐日家居｜線上購物平台",
+		"description": "家居電商網站，提供多裝置 RWD、商品瀏覽與下單結帳，含前後台與前後端分離架構。",
+		"type": "website",
+		"year": 2024,
+		"featured": false,
+		"covers": [
+			{
+				"type": "large",
+				"src": "/images/projects/website_mu_ri_homeware/vue_mu_ri_m_cover.webp",
+				"width": 1920,
+				"height": 760,
+				"alt": "沐日家居首頁截圖-大圖封面"
+			},
+			{
+				"type": "small",
+				"src": "/images/projects/website_mu_ri_homeware/vue_mu_ri_m_cover_2.webp",
+				"width": 1021,
+				"height": 502,
+				"alt": "沐日家居首頁截圖-小圖封面"
+			}
+		],
+		"tags": [
+			"Vue 3",
+			"Vue Router",
+			"Pinia",
+			"Vee-Validate",
+			"Axios",
+			"JSON Server",
+			"RWD",
+			"Bootstrap 5",
+			"i18next"
+		],
+		"tech": [
+			{ "key": "node", "label": "Node.js ^20.10.0", "url": "https://nodejs.org" },
+			{ "key": "vue", "label": "Vue 3 (Composition API)", "url": "https://vuejs.org" },
+			{ "key": "vue-router", "label": "Vue Router 4", "url": "https://router.vuejs.org" },
+			{ "key": "pinia", "label": "Pinia", "url": "https://pinia.vuejs.org" },
+			{
+				"key": "vee-validate",
+				"label": "Vee-Validate 4",
+				"url": "https://vee-validate.logaretm.com"
+			},
+			{ "key": "yup", "label": "Yup", "url": "https://github.com/jquense/yup" },
+			{ "key": "axios", "label": "Axios", "url": "https://axios-http.com" },
+			{ "key": "i18next", "label": "i18next", "url": "https://www.i18next.com" },
+			{ "key": "fuse", "label": "Fuse.js", "url": "https://www.fusejs.io" },
+			{ "key": "vue-select", "label": "vue-select", "url": "https://vue-select.org" },
+			{ "key": "swiper", "label": "Swiper", "url": "https://swiperjs.com" },
+			{
+				"key": "sweetalert2",
+				"label": "SweetAlert2",
+				"url": "https://sweetalert2.github.io"
+			},
+			{
+				"key": "toastify",
+				"label": "vue3-toastify",
+				"url": "https://www.npmjs.com/package/vue3-toastify"
+			},
+			{
+				"key": "loading",
+				"label": "vue-loading-overlay",
+				"url": "https://github.com/ankurk91/vue-loading-overlay"
+			},
+			{ "key": "bootstrap", "label": "Bootstrap 5", "url": "https://getbootstrap.com" },
+			{
+				"key": "json-server",
+				"label": "json-server",
+				"url": "https://github.com/typicode/json-server"
+			}
+		],
+		"responsibilities": [
+			"前台：商品列表、分類/關鍵字篩選、排序（推薦/評價/價格/建立時間）、追蹤清單、購物車（增減數量/刪除/套用優惠券）、結帳表單驗證、訂單列表與進度追蹤、佈置靈感與最新活動內容。",
+			"後台：管理者登入/登出、商品/優惠券/訂單/文章/活動之新增、編輯、刪除與列表管理。",
+			"RWD 響應式設計（375/576/768/992/1200/1600/1920）與後台多語系（i18next）整合。",
+			"額外以 json-server 模擬單一 API、串接 Axios 與表單驗證（Vee-Validate + Yup）。"
+		],
+		"outcomes": { "metric": "專案性質", "value": "個人練習作品", "note": "不作商業用途" },
+		"links": {
+			"frontend": "https://ben0588.github.io/vue_mu_ri_homeware/#/",
+			"backend": "https://ben0588.github.io/vue_mu_ri_homeware/#/admin/",
+			"repo": "https://github.com/ben0588/vue_mu_ri_homeware?tab=readme-ov-file"
+		},
+		"gallery": [
+			{
+				"src": "/images/projects/website_mu_ri_homeware/vue_mu_ri_d_04.webp",
+				"width": 2048,
+				"height": 1152,
+				"alt": "商品列表與篩選",
+				"title": "分類/關鍵字/排序與追蹤功能"
+			},
+			{
+				"src": "/images/projects/website_mu_ri_homeware/vue_mu_ri_d_07.webp",
+				"width": 2048,
+				"height": 1152,
+				"alt": "商品詳情",
+				"title": "商品詳情瀏覽功能"
+			},
+			{
+				"src": "/images/projects/website_mu_ri_homeware/vue_mu_ri_d_05.webp",
+				"width": 2048,
+				"height": 1152,
+				"alt": "購物車",
+				"title": "數量調整、加入願望清單與結帳"
+			},
+			{
+				"src": "/images/projects/website_mu_ri_homeware/vue_mu_ri_d_06.webp",
+				"width": 2048,
+				"height": 1152,
+				"alt": "購物車結帳",
+				"title": "優惠券與表單驗證"
+			},
+			{
+				"src": "/images/projects/website_mu_ri_homeware/vue_mu_ri_d_all_07.webp",
+				"width": 2048,
+				"height": 1152,
+				"alt": "會員查看訂單",
+				"title": "會員查看訂單狀況與付款"
+			},
+			{
+				"src": "/images/projects/website_mu_ri_homeware/vue_mu_ri_admin_02.webp",
+				"width": 2048,
+				"height": 1152,
+				"alt": "後台管理",
+				"title": "商品/訂單/文章/活動/優惠券 CRUD"
+			}
+		],
+		"timeline": { "start": "2024-1", "end": "2024-3" },
+		"caseIntro": [
+			{
+				"label": "背景",
+				"value": "以家居電商為題的 SPA 專案，著重 RWD、前後台流程與可維護的資料流。"
+			},
+			{ "label": "任務", "value": "完整覆蓋電商核心操作與後台營運管理。" },
+			{
+				"label": "角色",
+				"value": "獨立完成前端架構、狀態管理、驗證與 API 串接；規劃後台 CRUD。"
+			},
+			{ "label": "影響", "value": "建立可展示的完整電商流程樣板。" }
+		],
+		"reflection": [
+			"以 Pinia 管理跨頁面的購物車與追蹤清單，提升狀態一致性與可測性。",
+			"表單驗證統一採 Vee-Validate + Yup，降低重複驗證邏輯。",
+			"以 json-server 快速模擬後端，後續可無縫換接真實 API。"
+		],
+		"assets": {
+			"images": "unsplash.com",
+			"design": "設計師 Jesse",
+			"api": "六角學院"
+		}
+	},
+	{
+		"id": "website_fragrance_dawn",
+		"title": "香氛晨光｜線上購物平台",
+		"description": "提供香水產品瀏覽與購買的電商網站，具備前後台、前後端分離與動態網站特性。",
+		"type": "website",
+		"year": 2023,
+		"featured": false,
+		"covers": [
+			{
+				"type": "large",
+				"src": "/images/projects/website_fragrance_dawn/fragrance_dawn_cover_2.webp",
+				"width": 1920,
+				"height": 760,
+				"alt": "香水電商首頁截圖-大圖封面"
+			},
+			{
+				"type": "small",
+				"src": "/images/projects/website_fragrance_dawn/fragrance_dawn_cover.webp",
+				"width": 1021,
+				"height": 502,
+				"alt": "香水電商首頁截圖-封面"
+			}
+		],
+		"tags": [
+			"React 18",
+			"React Router",
+			"Redux Toolkit",
+			"RTK Query",
+			"Axios",
+			"RWD",
+			"Bootstrap 5",
+			"SCSS"
+		],
+		"tech": [
+			{ "key": "node", "label": "Node.js ^16.15.0", "url": "https://nodejs.org" },
+			{ "key": "react", "label": "React ^18.2.0", "url": "https://react.dev" },
+			{ "key": "react-dom", "label": "react-dom ^18.2.0", "url": "https://react.dev" },
+			{
+				"key": "react-router-dom",
+				"label": "React Router DOM ^6.14.2",
+				"url": "https://reactrouter.com"
+			},
+			{
+				"key": "redux-toolkit",
+				"label": "@reduxjs/toolkit ^1.9.5",
+				"url": "https://redux-toolkit.js.org"
+			},
+			{
+				"key": "rtk-query",
+				"label": "RTK Query ^1.9.5",
+				"url": "https://redux-toolkit.js.org/rtk-query/overview"
+			},
+			{
+				"key": "react-redux",
+				"label": "react-redux ^8.1.2",
+				"url": "https://react-redux.js.org"
+			},
+			{
+				"key": "redux-persist",
+				"label": "redux-persist ^6.0.0",
+				"url": "https://github.com/rt2zz/redux-persist"
+			},
+			{ "key": "axios", "label": "Axios ^1.4.0", "url": "https://axios-http.com" },
+			{ "key": "sass", "label": "Sass ^1.64.1", "url": "https://sass-lang.com" },
+			{ "key": "bootstrap", "label": "Bootstrap ^5.3.0", "url": "https://getbootstrap.com" },
+			{
+				"key": "react-bootstrap",
+				"label": "react-bootstrap ^2.8.0",
+				"url": "https://react-bootstrap.github.io"
+			},
+			{
+				"key": "styled-components",
+				"label": "styled-components ^6.0.5",
+				"url": "https://styled-components.com"
+			},
+			{
+				"key": "react-hook-form",
+				"label": "react-hook-form ^7.45.4",
+				"url": "https://react-hook-form.com"
+			},
+			{
+				"key": "react-select",
+				"label": "react-select ^5.7.4",
+				"url": "https://react-select.com"
+			},
+			{
+				"key": "react-toastify",
+				"label": "react-toastify ^9.1.3",
+				"url": "https://fkhadra.github.io/react-toastify"
+			},
+			{ "key": "swiper", "label": "Swiper ^10.1.0", "url": "https://swiperjs.com" },
+			{
+				"key": "sweetalert2",
+				"label": "SweetAlert2 ^11.7.20",
+				"url": "https://sweetalert2.github.io"
+			},
+			{
+				"key": "react-icons",
+				"label": "react-icons ^4.10.1",
+				"url": "https://react-icons.github.io/react-icons"
+			},
+			{
+				"key": "framer-motion",
+				"label": "framer-motion ^10.15.1",
+				"url": "https://www.framer.com/motion"
+			}
+		],
+		"responsibilities": [
+			"前台：首頁曝光、商品列表、類別與關鍵字篩選、名稱/價格排序、追蹤清單新增/移除、購物車新增/編輯數量/刪除、優惠券套用、訂單填寫與表單驗證、訂單列表與進度追蹤、文章專欄、優惠活動專區",
+			"後台：管理者登入/登出、商品列表/分類篩選、新增/編輯/刪除商品、優惠券列表與 CRUD、訂單列表與編輯、文章列表與 CRUD",
+			"RWD 響應式設計與狀態管理（Redux Toolkit + RTK Query）、前後端分離整合（Axios）與持久化（redux-persist）"
+		],
+		"outcomes": { "metric": "專案性質", "value": "個人練習作品", "note": "不作商業用途" },
+		"links": {
+			"frontend": "https://ben0588.github.io/react-fragrance-dawn/#/",
+			"repo": "https://github.com/ben0588/react-fragrance-dawn",
+			"backend": "https://ben0588.github.io/react-fragrance-dawn/#/admin"
+		},
+		"gallery": [
+			{
+				"src": "/images/projects/website_fragrance_dawn/fragrance_dawn_d_1.webp",
+				"width": 2048,
+				"height": 1152,
+				"alt": "指定推薦商品",
+				"title": "指定推薦商品功能"
+			},
+			{
+				"src": "/images/projects/website_fragrance_dawn/fragrance_dawn_d_2.webp",
+				"width": 2048,
+				"height": 1152,
+				"alt": "熱門商品推薦",
+				"title": "熱門商品推薦功能"
+			},
+			{
+				"src": "/images/projects/website_fragrance_dawn/fragrance_dawn_d_3.webp",
+				"width": 2048,
+				"height": 1152,
+				"alt": "熱門活動與優惠卷功能",
+				"title": "熱門活動與優惠卷功能"
+			},
+			{
+				"src": "/images/projects/website_fragrance_dawn/fragrance_dawn_d_4.webp",
+				"width": 2048,
+				"height": 1152,
+				"alt": "商品列表與篩選",
+				"title": "分類/關鍵字/排序與追蹤功能"
+			},
+			{
+				"src": "/images/projects/website_fragrance_dawn/fragrance_dawn_d_9.webp",
+				"width": 2048,
+				"height": 1152,
+				"alt": "商品詳情",
+				"title": "商品詳情瀏覽功能"
+			},
+			{
+				"src": "/images/projects/website_fragrance_dawn/fragrance_dawn_d_all_4.webp",
+				"width": 2048,
+				"height": 1152,
+				"alt": "購物車",
+				"title": "數量調整/願望清單/優惠卷功能"
+			},
+
+			{
+				"src": "/images/projects/website_fragrance_dawn/fragrance_dawn_d_all_5.webp",
+				"width": 2048,
+				"height": 1152,
+				"alt": "訂單結帳",
+				"title": "訂單表單欄位驗證功能"
+			},
+			{
+				"src": "/images/projects/website_fragrance_dawn/fragrance_dawn_d_all_6.webp",
+				"width": 2048,
+				"height": 1152,
+				"alt": "訂單付款與確認功能",
+				"title": "訂單付款與確認功能"
+			},
+			{
+				"src": "/images/projects/website_fragrance_dawn/fragrance_dawn_admin_2.webp",
+				"width": 2048,
+				"height": 1152,
+				"alt": "後台管理",
+				"title": "商品/訂單/文章/活動/優惠券 CRUD"
+			}
+		],
+		"timeline": { "start": "2024-4", "end": "2024-6" },
+		"caseIntro": [
+			{
+				"label": "背景",
+				"value": "以香水銷售為主題之電商 SPA，強調 RWD、完整前後台流程與前後端分離。"
+			},
+			{
+				"label": "任務",
+				"value": "涵蓋商品瀏覽→追蹤→下單→查單，以及後台營運管理（商品/優惠券/訂單/文章）。"
+			},
+			{
+				"label": "角色",
+				"value": "獨立完成前端架構、狀態管理、API 串接與後台 CRUD 規劃與實作。"
+			},
+			{ "label": "影響", "value": "打造可展示之電商流程樣板，利於拓展為正式專案或接案範本。" }
+		],
+		"reflection": [
+			"以 Redux Toolkit + RTK Query 建立資料流與 API 請求層，減少樣板碼並提升維護性。",
+			"表單採 React-Hook-Form 搭配元件化驗證，改善結帳流程體驗與可測性。",
+			"redux-persist 保存購物車與登入狀態，提升回訪體驗；Axios 統一攔截錯誤與權限處理。"
+		],
+		"assets": {
+			"images": "unsplash.com",
+			"design": "Logo 由 designevo 製作（免費版 300x300）",
+			"api": "六角學院（約 30 支 API）"
+		}
+	},
+	{
+		"id": "website_shopping_site",
+		"title": "源點 | 線上購物平台",
+		"description": "網球周邊電商網站，提供商品瀏覽、搜尋/篩選/排序、購物車與願望清單，含前後台、前後端分離與動態網站特性。",
+		"type": "website",
+		"year": 2022,
+		"featured": false,
+		"covers": [
+			{
+				"type": "large",
+				"src": "/images/projects/shopping_site/shopping_site_cover_2.webp",
+				"width": 1920,
+				"height": 760,
+				"alt": "源點網球電商首頁截圖-大圖封面"
+			},
+			{
+				"type": "small",
+				"src": "/images/projects/shopping_site/shopping_site_cover.webp",
+				"width": 1021,
+				"height": 502,
+				"alt": "源點網球電商首頁截圖-封面"
+			}
+		],
+		"tags": [
+			"React 18",
+			"React Router",
+			"React Context & useReducer",
+			"React Hook Form",
+			"Axios",
+			"RWD",
+			"Bootstrap 5",
+			"SCSS",
+			"Styled Components",
+			"Express",
+			"MySQL"
+		],
+		"tech": [
+			{ "key": "node", "label": "Node.js ^16.15.0", "url": "https://nodejs.org" },
+			{ "key": "react", "label": "React ^18.2.0", "url": "https://react.dev" },
+			{
+				"key": "react-router-dom",
+				"label": "react-router-dom ^6.14.2",
+				"url": "https://reactrouter.com"
+			},
+			{
+				"key": "use-context",
+				"label": "React Context & useReducer",
+				"url": "https://react.dev/reference/react"
+			},
+			{
+				"key": "react-hook-form",
+				"label": "react-hook-form ^7.45.4",
+				"url": "https://react-hook-form.com"
+			},
+			{ "key": "axios", "label": "Axios ^1.4.0", "url": "https://axios-http.com" },
+			{ "key": "sass", "label": "Sass/SCSS ^1.64.1", "url": "https://sass-lang.com" },
+			{
+				"key": "styled-components",
+				"label": "styled-components ^6.0.5",
+				"url": "https://styled-components.com"
+			},
+			{ "key": "bootstrap", "label": "Bootstrap ^5.3.0", "url": "https://getbootstrap.com" },
+			{
+				"key": "react-loading-skeleton",
+				"label": "react-loading-skeleton",
+				"url": "https://github.com/dvtng/react-loading-skeleton"
+			},
+			{ "key": "glide", "label": "Glide.js", "url": "https://glidejs.com" },
+			{ "key": "swiper", "label": "Swiper", "url": "https://swiperjs.com" },
+			{
+				"key": "react-toastify",
+				"label": "react-toastify ^9.1.3",
+				"url": "https://fkhadra.github.io/react-toastify"
+			},
+			{
+				"key": "sweetalert2",
+				"label": "SweetAlert2",
+				"url": "https://sweetalert2.github.io"
+			},
+			{ "key": "aos", "label": "AOS.js", "url": "https://michalsnik.github.io/aos" },
+			{ "key": "express", "label": "Express ~4.16.1", "url": "https://expressjs.com" },
+			{
+				"key": "jsonwebtoken",
+				"label": "jsonwebtoken (JWT)",
+				"url": "https://github.com/auth0/node-jsonwebtoken"
+			},
+			{ "key": "oauth2", "label": "OAuth 2.0（第三方登入）", "url": "https://oauth.net/2" },
+			{
+				"key": "express-session",
+				"label": "express-session",
+				"url": "https://github.com/expressjs/session"
+			},
+			{ "key": "mysql", "label": "MySQL", "url": "https://www.mysql.com" },
+			{ "key": "amazon-ses", "label": "Amazon SES", "url": "https://aws.amazon.com/ses" },
+			{
+				"key": "swagger-ui-express",
+				"label": "swagger-ui-express",
+				"url": "https://github.com/scottie1984/swagger-ui-express"
+			}
+		],
+
+		"responsibilities": [
+			"前台：首頁展示、會員登入/註冊/第三方登入（Line/Google/Facebook/Github）、商品清單、依類別/品牌/關鍵字篩選、商品詳情頁、購物車操作（新增/修改數量/刪除）、願望清單管理",
+			"系統：RWD 響應式設計（320/375/414/568/768/1140）、狀態管理（Context + useReducer）、API 串接與權限驗證（JWT / OAuth2.0）、會員資料管理（新增/編輯/刪除）、跨瀏覽器支援"
+		],
+		"outcomes": {
+			"metric": "專案性質",
+			"value": "個人練習作品",
+			"note": "會員系統以操作影片展示；不作商業用途"
+		},
+		"links": {
+			"frontend": "https://ben0588.github.io/shopping_site/",
+			"repo": "https://github.com/ben0588/react-fragrance-dawn?tab=readme-ov-file",
+			"backend_repo": "https://github.com/ben0588/node_shopping_site",
+			"backend": "https://ben0588.github.io/shopping_site/#/admin",
+			"user_login": "https://www.awesomescreenshot.com/video/16645056?key=9c2238c9526bd23680646344798f8527",
+			"swagger": "https://www.awesomescreenshot.com/video/16523212?key=124967b030a390339c2130f7b9627996"
+		},
+		"gallery": [
+			{
+				"src": "/images/projects/shopping_site/shopping_site_d_2.webp",
+				"width": 2048,
+				"height": 1152,
+				"alt": "新商品上架推薦",
+				"title": "新商品上架推薦功能"
+			},
+			{
+				"src": "/images/projects/shopping_site/shopping_site_d_4.webp",
+				"width": 2048,
+				"height": 1152,
+				"alt": "使用者照片分享牆",
+				"title": "使用者照片分享牆功能"
+			},
+			{
+				"src": "/images/projects/shopping_site/shopping_site_d_7.webp",
+				"width": 2048,
+				"height": 1152,
+				"alt": "商品列表與篩選",
+				"title": "分類/關鍵字/排序與追蹤功能"
+			},
+			{
+				"src": "/images/projects/shopping_site/shopping_site_d_10.webp",
+				"width": 2048,
+				"height": 1152,
+				"alt": "商品詳情",
+				"title": "商品詳情瀏覽功能"
+			},
+			{
+				"src": "/images/projects/shopping_site/shopping_site_d_11.webp",
+
+				"width": 2048,
+				"height": 1152,
+				"alt": "購物車",
+				"title": "數量調整/願望清單功能"
+			},
+			{
+				"src": "/images/projects/shopping_site/shopping_site_d_12.webp",
+
+				"width": 2048,
+				"height": 1152,
+				"alt": "登入功能",
+				"title": "會員登入(串接第三方登入)"
+			}
+		],
+		"timeline": { "start": "2022-4", "end": "2022-7" },
+		"caseIntro": [
+			{
+				"label": "背景",
+				"value": "求學期間接觸網球，基於興趣打造之垂直品類電商，模擬完整購物與營運流程。"
+			},
+			{
+				"label": "任務",
+				"value": "提供多品牌商品瀏覽與搜尋/篩選/排序體驗，建立購物車、願望清單功能。"
+			},
+			{
+				"label": "角色",
+				"value": "獨立負責前端架構、RWD 與互動、權限與驗證流程、後台針對會員系統 CRUD 與前端 API 串接；規劃資料流與錯誤處理。"
+			},
+			{
+				"label": "影響",
+				"value": "形成可重用之垂直電商樣板，利於未來擴增 OAuth、支付與 SEO/效能優化議題。"
+			}
+		],
+		"reflection": [
+			"透過 Context + useReducer 建立可預期的狀態流，將登入狀態、購物車與願望清單模組化管理。",
+			"前端接入第三方登入，後端採用 JWT 與 OAuth 2.0 與資源方進行身分驗證。",
+			"導入 Skeleton、Toast、SweetAlert2 與 AOS，優化載入體驗與操作回饋，提升使用者體驗。",
+			"使用 Swagger 整理與維護 API 規格，便利前後端協作並強化回歸測試效率。"
+		],
+		"assets": {
+			"images": "unsplash.com",
+			"design": "Canva（商品圖製作）、Figma（網站草圖）",
+			"colorGuides": [
+				"主色 #00b894；副色 #111414 / #FFFFFF",
+				"其他 #dfe6e9 / #b2bec3 / #636e72 / #0a2240；提醒 #b80012；錯誤 #B00020",
+				"色彩參考：FLAT UI COLORS 2；對比檢測：Contrast Ratio"
+			],
+			"docs": ["Type basics（設計規範）", "Can I use（瀏覽器支援查詢）"]
+		}
+	},
+	{
+		"id": "website_react_todolist",
+		"title": "TODO LIST | 待辦清單工具",
+		"description": "提供使用者登入與註冊，建立、編輯、刪除與篩選待辦清單的工具網站，支援狀態管理與即時操作回饋。",
+		"type": "website",
+		"year": 2023,
+		"featured": false,
+		"covers": [
+			{
+				"type": "large",
+				"src": "/images/projects/react_todolist/react_tolist_cover_2.webp",
+				"width": 1920,
+				"height": 760,
+				"alt": "TODO LIST | 待辦清單工具-大圖封面"
+			},
+			{
+				"type": "small",
+				"src": "/images/projects/react_todolist/react_tolist_cover.webp",
+				"width": 1021,
+				"height": 502,
+				"alt": "TODO LIST | 待辦清單工具-封面"
+			}
+		],
+		"tags": ["React 18", "React Router", "Context API", "Axios", "SCSS", "Bootstrap 5"],
+		"tech": [
+			{ "key": "node", "label": "Node.js ^16.15.0", "url": "https://nodejs.org" },
+			{ "key": "react", "label": "React ^18.2.0", "url": "https://react.dev" },
+			{ "key": "react-dom", "label": "react-dom ^18.2.0", "url": "https://react.dev" },
+			{
+				"key": "react-router-dom",
+				"label": "react-router-dom ^6.14.2",
+				"url": "https://reactrouter.com"
+			},
+			{ "key": "axios", "label": "Axios ^1.4.0", "url": "https://axios-http.com" },
+			{ "key": "sass", "label": "Sass ^1.64.1", "url": "https://sass-lang.com" },
+			{ "key": "bootstrap", "label": "Bootstrap ^5.3.0", "url": "https://getbootstrap.com" },
+			{
+				"key": "react-toastify",
+				"label": "react-toastify ^9.1.3",
+				"url": "https://fkhadra.github.io/react-toastify"
+			},
+			{
+				"key": "sweetalert2",
+				"label": "SweetAlert2 ^11.7.20",
+				"url": "https://sweetalert2.github.io"
+			},
+			{
+				"key": "react-icons",
+				"label": "react-icons ^4.10.1",
+				"url": "https://react-icons.github.io/react-icons"
+			}
+		],
+
+		"responsibilities": [
+			"使用者登入與註冊功能（每日凌晨 1:15 清除資料）。",
+			"待辦清單列表展示、新增、編輯、刪除功能。",
+			"依狀態篩選清單（待完成、已完成）。",
+			"更改待辦項目完成狀態、刪除全部已完成項目。",
+			"RWD 響應式設計與 Context API 狀態管理。",
+			"Toast 與 SweetAlert2 提供互動提示與操作回饋。"
+		],
+		"outcomes": { "metric": "專案性質", "value": "個人練習作品", "note": "不作商業用途" },
+		"links": {
+			"frontend": "https://ben0588.github.io/react-todolist/",
+			"repo": "https://github.com/ben0588/react-todolist?tab=readme-ov-file"
+		},
+		"gallery": [
+			{
+				"src": "/images/projects/react_todolist/react_tolist_d_1.webp",
+				"width": 2048,
+				"height": 1152,
+				"alt": "登入頁面",
+				"title": "使用者登入（每日清除資料）"
+			},
+			{
+				"src": "/images/projects/react_todolist/react_tolist_d_1_1.webp",
+				"width": 2048,
+				"height": 1152,
+				"alt": "註冊頁面",
+				"title": "註冊系統（每日清除資料）"
+			},
+			{
+				"src": "/images/projects/react_todolist/react_tolist_d_2.webp",
+				"width": 2048,
+				"height": 1152,
+				"alt": "待辦清單列表",
+				"title": "顯示待辦項目，支援狀態切換"
+			},
+			{
+				"src": "/images/projects/react_todolist/react_tolist_d_3.webp",
+				"width": 2048,
+				"height": 1152,
+				"alt": "編輯與刪除",
+				"title": "編輯待辦內容與刪除項目"
+			}
+		],
+		"timeline": { "start": "2024-7", "end": "2024-8" },
+		"caseIntro": [
+			{
+				"label": "背景",
+				"value": "基於日常需求開發的待辦清單工具，專注在任務管理的基礎操作與體驗。"
+			},
+			{
+				"label": "任務",
+				"value": "提供登入/註冊、待辦新增/編輯/刪除、狀態篩選與批次刪除功能。"
+			},
+			{ "label": "角色", "value": "獨立負責前端設計、狀態管理、API 串接與介面互動。" },
+			{
+				"label": "影響",
+				"value": "強化 React 狀態管理與表單驗證的實戰經驗，完成一個可展示的基礎工具作品。"
+			}
+		],
+		"reflection": [
+			"以 Context API 管理登入狀態與清單資料，減少 props 傳遞。",
+			"導入 SweetAlert2 與 Toast 提升操作即時回饋。",
+			"RWD 適配常見裝置尺寸，優化使用者體驗。"
+		],
+		"assets": {
+			"images": "unsplash.com / canva",
+			"design": "自行設計配色，參考 Bootstrap 元件",
+			"api": "六角學院"
+		}
+	},
+	{
+		"id": "test_2024_next_todolist",
+		"title": "TODO List｜Next.js + Tailwind + Zustand",
+		"description": "以 Next.js 14、TailwindCSS、Zustand 實作的待辦清單小專案，著重於清單管理與狀態切換，作為技術練習紀錄。",
+		"type": "test",
+		"year": 2024,
+		"featured": false,
+		"covers": [
+			{
+				"type": "large",
+				"src": "/images/projects/next_todolist/next_todolist_cover_2.webp",
+				"width": 1920,
+				"height": 760,
+				"alt": "Next TODO List 首頁截圖-大圖封面"
+			},
+			{
+				"type": "small",
+				"src": "/images/projects/next_todolist/next_todolist_cover.webp",
+				"width": 1021,
+				"height": 502,
+				"alt": "Next TODO List 首頁截圖-封面"
+			}
+		],
+		"tags": ["Next.js 14", "React 18", "Zustand", "TailwindCSS"],
+		"tech": [
+			{ "key": "node", "label": "Node.js ^20.10.0", "url": "https://nodejs.org" },
+			{ "key": "next", "label": "Next.js ^14.2.3", "url": "https://nextjs.org" },
+			{ "key": "react", "label": "React ^18", "url": "https://react.dev" },
+			{
+				"key": "zustand",
+				"label": "Zustand ^4.5.2",
+				"url": "https://github.com/pmndrs/zustand"
+			},
+			{ "key": "tailwind", "label": "TailwindCSS ^3.4.1", "url": "https://tailwindcss.com" }
+		],
+		"responsibilities": [
+			"以 Next.js v14 建立專案。",
+			"清單列表顯示、建立、編輯、刪除與完成狀態切換。",
+			"以 Zustand 管理全域狀態；Tailwind 建構元件樣式。",
+			"RWD 響應式版面。"
+		],
+		"outcomes": {
+			"metric": "專案性質",
+			"value": "技術練習",
+			"note": "作為 2024 年度新技術嘗試紀錄"
+		},
+		"links": {
+			"frontend": "https://next-tailwind-zustand.vercel.app/",
+			"repo": "https://github.com/ben0588/next_tailwind_zustand"
+		},
+
+		"gallery": [
+			{
+				"src": "/images/projects/next_todolist/next_todolist_d_home.webp",
+				"width": 2048,
+				"height": 1152,
+				"alt": "顯示與新待辦項目增",
+				"title": "顯示與新待辦項目增"
+			},
+			{
+				"src": "/images/projects/next_todolist/next_todolist_d_2.webp",
+				"width": 2048,
+				"height": 1152,
+				"alt": "支援清單選項狀態切換",
+				"title": "支援清單選項狀態切換"
+			},
+			{
+				"src": "/images/projects/next_todolist/next_todolist_d_1.webp",
+				"width": 2048,
+				"height": 1152,
+				"alt": "編輯待辦內容與刪除項目",
+				"title": "編輯待辦內容與刪除項目"
+			}
+		],
+		"timeline": { "start": "2024-10", "end": "2024-10" },
+		"caseIntro": [
+			{
+				"label": "背景",
+				"value": "以 Next.js 14 + Tailwind + Zustand 建構的待辦清單，作為年度技術練習。"
+			},
+			{ "label": "任務", "value": "完成清單 CRUD、狀態切換與篩選，優化基本 UX 與 RWD。" },
+			{ "label": "角色", "value": "獨立負責頁面、狀態、樣式與資料流規劃。" },
+			{ "label": "影響", "value": "驗證 app router 與輕量狀態管理在中小型專案的可行性。" }
+		],
+		"reflection": [
+			"以 Zustand 取代繁雜的全域方案，維持小專案的心智負擔。",
+			"Tailwind 提升開發速度，維護一致的 UI token。",
+			"以簡單篩選/查詢模式，預留未來擴充到 URL 參數的空間。"
+		]
+	}
+]

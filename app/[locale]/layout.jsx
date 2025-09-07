@@ -36,21 +36,13 @@ export async function generateMetadata({ params }) {
 	const hantOpenGraph = {
 		title: t('title'),
 		description: '網站描述',
-		url: 'url',
-		images: [
-			{
-				url: 'https://sport.kinglyrobot.com/meta/open_graph_image_1200x600.jpg',
-				width: 1200,
-				height: 600,
-				alt: '測試 alt',
-			},
-		],
 		locale: 'zh-Hant-TW',
 		type: 'website',
 	};
 
 	return {
 		title: t('title'),
+		charset: 'UTF-8',
 		openGraph: hantOpenGraph,
 	};
 }
@@ -74,7 +66,7 @@ export default async function LocaleLayout({ children, params }) {
 					<ThemeProviders>
 						<div className='flex min-h-screen max-w-full flex-col'>
 							<Header />
-							<main className='grow pt-3'>{children}</main>
+							<main className='grow p-3'>{children}</main>
 							<Footer />
 						</div>
 					</ThemeProviders>
