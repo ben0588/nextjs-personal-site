@@ -80,7 +80,7 @@ const ProjectDetailPage = async ({ params }) => {
 
 			<div className='max-h-[500px] min-h-[200px] w-full overflow-hidden'>
 				<Image
-					src={`${process.env.NEXT_PUBLIC_SITE_URL}${largeImage?.src}`}
+					src={largeImage?.src}
 					alt={largeImage?.alt}
 					priority
 					width={largeImage?.width} // 原圖實際寬

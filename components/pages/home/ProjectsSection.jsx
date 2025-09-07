@@ -71,7 +71,7 @@ const ProjectsSection = async () => {
 									</h3>
 									<div className='h-[85%] w-full overflow-hidden'>
 										<Image
-											src={`${process.env.NEXT_PUBLIC_SITE_URL}${smallImage?.src}`}
+											src={smallImage?.src}
 											alt={smallImage?.alt}
 											priority={false}
 											width={smallImage?.width} // 原圖實際寬

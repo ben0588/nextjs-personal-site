@@ -39,7 +39,7 @@ const ImageLightbox = ({ item, children }) => {
 					<div className='flex flex-col items-center justify-center gap-3'>
 						<div className='h-auto w-full overflow-hidden lg:h-[80%] lg:w-[80%]'>
 							<Image
-								src={`${process.env.NEXT_PUBLIC_SITE_URL}${item.src}`}
+								src={item.src}
 								alt={item?.alt}
 								priority
 								width={item?.width} // 原圖實際寬

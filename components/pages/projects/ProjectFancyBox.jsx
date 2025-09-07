@@ -16,7 +16,7 @@ const ProjectFancyBox = ({ gallery }) => {
 					className='flex cursor-pointer flex-col justify-between duration-100 hover:opacity-85'
 				>
 					<Image
-						src={`${process.env.NEXT_PUBLIC_SITE_URL}${item?.src}`}
+						src={item?.src}
 						data-fancybox='gallery'
 						alt={item?.alt}
 						priority
