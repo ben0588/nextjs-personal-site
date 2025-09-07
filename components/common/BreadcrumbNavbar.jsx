@@ -73,7 +73,7 @@ function BreadcrumbNavbar({ items = [], currentType = 'h1', autoPrependHome = tr
 						const baseBeforeClass =
 							idx === 0
 								? "first:pl-0 first:before:content-['']"
-								: 'breadcrumbBeforeIcon';
+								: 'breadcrumb-before-icon';
 
 						// 最後一個：當前頁
 						if (isLast) {

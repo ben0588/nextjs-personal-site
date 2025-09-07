@@ -65,15 +65,15 @@ const Header = () => {
 					<div className='inline-block'>
 						<button
 							type='button'
-							className='navButton p-2 sm:hidden'
+							className='navbar-button p-2 sm:hidden'
 							aria-expanded={openMenu}
 							data-open={openMenu ? 'true' : 'false'}
 							aria-label='網站導航'
 							title='網站導航'
 							onClick={toggleOpenMenu}
 						>
-							<AiOutlineMenu className='navIcon navIcon-open' />
-							<RiMenuFold4Line className='navIcon navIcon-close' />
+							<AiOutlineMenu className='navbar-icon navbar-icon-open' />
+							<RiMenuFold4Line className='navbar-icon navbar-icon-close' />
 						</button>
 					</div>
 					{/* 切換語系 */}
@@ -97,23 +97,23 @@ const Header = () => {
 							<div className='relative h-full'>
 								<button
 									type='button'
-									className='navButton animate-wiggle absolute top-1/2 -left-8 p-2'
+									className='navbar-button animate-wiggle absolute top-1/2 -left-8 p-2'
 									aria-label='關閉手機板導航菜單'
 									title='手機板導航菜單'
 									onClick={toggleOpenMenu}
 									onKeyDown={(e) => console.log('2')}
 								>
-									<FaChevronCircleRight className='navIcon animate-wiggle' />
+									<FaChevronCircleRight className='navbar-icon animate-wiggle' />
 								</button>
 								<button
 									type='button'
-									className='navButton absolute float-end p-2'
+									className='navbar-button absolute float-end p-2'
 									aria-label='關閉手機板導航菜單'
 									title='手機板導航菜單'
 									onClick={toggleOpenMenu}
 									onKeyDown={(e) => console.log('3')}
 								>
-									<IoCloseSharp className='navIcon' />
+									<IoCloseSharp className='navbar-icon' />
 								</button>
 
 								<nav className='flex flex-col gap-4 p-5'>

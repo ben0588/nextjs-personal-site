@@ -1,0 +1,56 @@
+[
+	{
+		"label": "前端",
+		"content": [
+			"Next.js：SSR/ISR、App Router、API Routes、攔截處理(middleware)、狀態管理(Zustand)、多語系 (next-intl)、主題色 (next-themes)。",
+			"React.js：SPA、狀態管理(Redux、RTK Query)、表單驗證(React Hook Form)。",
+			"Vue.js：Vue Router、Pinia、表單驗證(vee-validate + yup)。",
+			"Javascript：熟悉 ES6+ 語法、非同步操作 (Promise/async-await)、事件處理與 DOM 操作。"
+		]
+	},
+	{
+		"label": "樣式",
+		"content": [
+			"Tailwind：RWD 版型設計、客製化 theme config、暗色模式支援。",
+			"Bootstrap：快速排版、Grid 系統、響應式設計。",
+			"SCSS：變數、Mixin、巢狀結構、模組化樣式管理。",
+			"Styled Components：CSS-in-JS、動態樣式、條件式樣式設定。"
+		]
+	},
+	{
+		"label": "後端",
+		"content": [
+			"Express：建立 RESTful API、JWT 驗證、Middleware 設計、CORS 設定。",
+			"MySQL：資料庫 Schema 設計、基本 CRUD 操作、資料關聯查詢。",
+			"Supabase：資料表 CRUD。",
+			"JSON-Server：快速模擬 API，支援前端開發測試環境。"
+		]
+	},
+
+	{
+		"label": "SEO",
+		"content": [
+			"網頁標籤結構：語意化標籤 (h1–h6, article, section, nav) 提升搜尋可讀性。",
+			"Meta：動態設定標題、描述、Open Graph、Twitter Cards。",
+			"Sitemap：自動生成 XML Sitemap，利於搜尋引擎收錄。",
+			"Robots：設置 robots.txt 控制爬蟲存取權限。",
+			"Google Search Console：提交與檢查收錄狀態，監控 SEO 效果。",
+			"JSON-LD：結構化資料標記 (Breadcrumb、Article、Product)。"
+		]
+	},
+	{
+		"label": "品質",
+		"content": [
+			"SonarQube：程式碼品質檢測，掌握重複程式碼、潛在 Bug 與安全性問題。",
+			"ESLint：維持程式碼一致性，避免潛在錯誤，搭配 Prettier 格式化。"
+		]
+	},
+	{
+		"label": "其他",
+		"content": [
+			"Docker：建立開發與正式環境容器化，撰寫 docker-compose.yml，方便團隊部署。",
+			"reCAPTCHA / hCaptcha：表單驗證、防爬蟲機制，支援區域性替代方案。",
+			"第三方登入串接：(Apple / Google / Facebook / Line / GitHub) OAuth2 流程整合。"
+		]
+	}
+]

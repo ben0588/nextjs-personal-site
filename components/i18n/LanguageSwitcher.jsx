@@ -89,14 +89,12 @@ function LanguageSwitcher({ isMobile = false }) {
 			<button
 				type='button'
 				onClick={toggleMenuShow}
-				className='navButton'
+				className='navbar-button'
 				aria-haspopup='true' // 閱讀器支援告知會有彈出的選單
 				aria-expanded={isOpenMenu} // 是否已開啟選單
 				aria-label={t('changeLanguage')}
 			>
-				<AiOutlineGlobal className='navIcon' />
-				{/* <IoEarth className='navIcon' />
-				<FaEarthAsia className='navIcon' /> */}
+				<AiOutlineGlobal className='navbar-icon' />
 			</button>
 
 			{isOpenMenu && (

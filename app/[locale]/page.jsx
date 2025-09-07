@@ -1,14 +1,11 @@
-'use client';
+'use server';
+import HeroSection from '@/components/pages/home/HeroSection';
+import NotesSection from '@/components/pages/home/NotesSection';
+import ProjectsSection from '@/components/pages/home/ProjectsSection';
+import SkillsSection from '@/components/pages/home/SkillsSection';
 // /app/[locale]/page.jsx
 
-import { useLocale, useTranslations } from 'next-intl';
-
-export default function HomePage() {
-	const t = useTranslations();
-	const locale = useLocale();
-
-	console.log('locale', locale);
-
+export default async function HomePage() {
 	const jsonLd = {
 		'@context': 'https://schema.org',
 		'@type': 'ProfilePage',
@@ -25,8 +22,18 @@ export default function HomePage() {
 	};
 
 	return (
-		<div>
-			<h1 className='text-red-400'>{t('HomePage.title')}</h1>
+		<div className='space-y-20'>
+			{/* 個人簡短介紹 */}
+			<HeroSection />
+
+			{/* 作品區塊 */}
+			<ProjectsSection />
+
+			{/* 技術展示 */}
+			<SkillsSection />
+
+			{/* 個人筆記區塊 */}
+			<NotesSection />
 
 			{jsonLd && (
 				<script

@@ -566,7 +566,7 @@
 		"id": "website_react_todolist",
 		"title": "TODO LIST | 待辦清單工具",
 		"description": "提供使用者登入與註冊，建立、編輯、刪除與篩選待辦清單的工具網站，支援狀態管理與即時操作回饋。",
-		"type": "website",
+		"type": "tool",
 		"year": 2023,
 		"featured": false,
 		"covers": [

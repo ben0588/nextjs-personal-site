@@ -5,14 +5,14 @@ import PropTypes from 'prop-types';
 
 const NavLink = ({ href, children, onClick }) => {
 	const pathname = usePathname();
-	const defaultActiveClass = 'navLinkActive';
+	const defaultActiveClass = 'navbar-link-active';
 
 	const isActive = pathname === href || (href !== '/' && pathname.startsWith(href));
 
 	return (
 		<Link
 			href={href}
-			className={`relative p-1 ${isActive ? defaultActiveClass : 'navLink'}`}
+			className={`relative p-1 ${isActive ? defaultActiveClass : 'navbar-link'}`}
 			onClick={onClick}
 		>
 			{children}

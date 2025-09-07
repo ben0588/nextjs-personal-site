@@ -22,18 +22,22 @@ export default function ThemeToggle() {
 
 	if (!mounted)
 		return (
-			<button className='navButton animate-pulse' type='button'>
-				<AiOutlineLoading className='navIcon animate-spin' />
+			<button className='navbar-button animate-pulse' type='button'>
+				<AiOutlineLoading className='navbar-icon animate-spin' />
 			</button>
 		);
 
 	return (
 		<button
-			className='navButton'
+			className='navbar-button'
 			type='button'
 			onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
 		>
-			{theme === 'dark' ? <MdWbSunny className='navIcon' /> : <FaMoon className='navIcon' />}
+			{theme === 'dark' ? (
+				<MdWbSunny className='navbar-icon' />
+			) : (
+				<FaMoon className='navbar-icon' />
+			)}
 		</button>
 	);
 }
