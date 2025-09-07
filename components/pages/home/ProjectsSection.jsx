@@ -31,7 +31,7 @@ const ProjectsSection = async () => {
 		<section className='max-container flex flex-col gap-3 overflow-hidden'>
 			<h2 className=''>作品集</h2>
 			<div className='grid grid-cols-1 gap-5 sm:grid-cols-2 md:gap-2'>
-				<div className='primary-border order-2 flex w-full flex-col justify-between gap-3 rounded-md p-3 sm:order-1 sm:w-[80%] md:w-[60%] xl:w-[100%]'>
+				<div className='primary-border order-2 flex w-full flex-col justify-between gap-3 rounded-md p-3 transition-transform duration-200 hover:translate-x-1 sm:order-1 sm:w-[80%] md:w-[60%] xl:w-[100%]'>
 					<div>
 						<p>
 							這些專案展示了我在前端開發、UI/UX

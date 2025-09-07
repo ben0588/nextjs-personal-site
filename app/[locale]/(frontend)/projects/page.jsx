@@ -45,7 +45,7 @@ const ProjectsPage = async ({ searchParams }) => {
 
 			<ProjectsNavbar />
 
-			<div className='mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-3'>
+			<div className='my-5 grid grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-3'>
 				{filterProject?.map((item) => (
 					<ProjectCard item={item} key={item.id} />
 				))}

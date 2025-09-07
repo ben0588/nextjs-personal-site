@@ -174,11 +174,11 @@ h5 {
 
 /* 常用框線 border --- start */
 .primary-border {
-	@apply border-primary-border hover:border-primary-border-hover dark:border-dark-primary-border dark:hover:border-dark-primary-border-hover border;
+	@apply border-primary-border hover:border-primary-border-hover dark:border-dark-primary-border dark:hover:border-dark-primary-border-hover border duration-150;
 }
 
 .primary-border-color {
-	@apply border-primary-border hover:border-primary-border-hover dark:border-dark-primary-border dark:hover:border-dark-primary-border-hover;
+	@apply border-primary-border hover:border-primary-border-hover dark:border-dark-primary-border dark:hover:border-dark-primary-border-hover duration-150;
 }
 
 /* 常用框線 border --- ends */

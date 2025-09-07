@@ -22,7 +22,7 @@ export default async function HomePage() {
 	};
 
 	return (
-		<div className='space-y-20'>
+		<div className='space-y-30'>
 			{/* 個人簡短介紹 */}
 			<HeroSection />
 

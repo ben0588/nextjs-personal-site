@@ -12,7 +12,9 @@ const nextConfig = {
 			{
 				hostname: 'nextjs-personal-site-pi.vercel.app',
 			},
-
+			{
+				hostname: 'animation.lottie',
+			},
 			{
 				hostname: 'localhost',
 			},
