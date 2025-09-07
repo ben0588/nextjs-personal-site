@@ -10,7 +10,7 @@ const nextConfig = {
 		contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
 		remotePatterns: [
 			{
-				hostname: 'https://nextjs-personal-site-pi.vercel.app',
+				hostname: 'nextjs-personal-site-pi.vercel.app',
 			},
 
 			{
